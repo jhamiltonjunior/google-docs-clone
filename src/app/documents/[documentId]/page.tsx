@@ -1,3 +1,5 @@
+import Editor from "@/app/documents/[documentId]/editor";
+
 interface DocumentIdPageProps {
     params: Promise<{ documentId: string }>
 }
@@ -7,7 +9,7 @@ export default async function DocumentIdPage ({ params }: DocumentIdPageProps) {
 
     return (
         <div>
-            <h1>Document ID: {documentId}</h1>
+            <Editor />
         </div>
     )
 
